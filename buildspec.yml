@@ -22,4 +22,5 @@ cache:
 
 artifacts:
   files:
-    - lambda_function.py
+  #  - lambda_function.py
+    - deployment.zip
