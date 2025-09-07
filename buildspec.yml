@@ -18,7 +18,8 @@ cache:
   paths:
     - /root/.cache/pip/**/*
     - /root/.pyenv/**/*
+    - /root/.pyenv/versions/**/*
 
 artifacts:
   files:
-    - deployment.zip
+    - lambda_function.py
