@@ -3,7 +3,7 @@ Resources:
   - myLambdaFunction:
       Type: AWS::Lambda::Function
       Properties:
-        Name:  lambda_function  # <-- Lambda function name
+        Name:  my_serverless_lambda  # <-- Lambda function name
         Alias: live                   # <-- alias for traffic shifting
-        CurrentVersion: 1
-        TargetVersion: 2
+        CurrentVersion: 3
+        TargetVersion: 4
