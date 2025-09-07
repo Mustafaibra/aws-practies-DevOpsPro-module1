@@ -1,6 +1,6 @@
 import lambda_function
 
-event ={'name' : 'Lab User'}
+event ={'name' : 'Lab User' , "birthDateInYear": "23"}
 context = {}
 
 
