@@ -12,7 +12,7 @@ phases:
       - python test_lambda.py
   post_build:
     commands:
-      - zip -r deployment.zip lambda_function.py
+      - zip -r deployment.zip lambda_function.py appspec.yml
 
 cache:
   paths:
