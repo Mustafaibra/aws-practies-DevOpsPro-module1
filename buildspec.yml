@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+  pre_build:
+    commands:
+      - pip install -r requirements.txt
+  build:
+    commands:
+      - python test_lambda.py
+  post_build:
+    commands:
+      - zip -r deployment.zip lambda_function.py
+
+artifacts:
+  files:
+    - deployment.zip
