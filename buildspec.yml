@@ -14,6 +14,11 @@ phases:
     commands:
       - zip -r deployment.zip lambda_function.py
 
+cache:
+  paths:
+    - /root/.cache/pip/**/*
+    - /root/.pyenv/**/*
+
 artifacts:
   files:
     - deployment.zip
