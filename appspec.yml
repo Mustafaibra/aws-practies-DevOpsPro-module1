@@ -5,5 +5,3 @@ Resources:
       Properties:
         Name: my-lambda-infra-stack-MyHelloWorldFunction-ryC0JrebbF7Z  # <-- Lambda function name
         Alias: live                   # <-- alias for traffic shifting
-        CurrentVersion: 1
-        TargetVersion: 2
