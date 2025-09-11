@@ -1,11 +1,12 @@
-version: 0.0
+---
+version: 0
 Resources:
   - myLambdaFunction:
       Type: AWS::Lambda::Function
       Properties:
         Name: my-lambda-infra-stack-MyHelloWorldFunction-ryC0JrebbF7Z
         Alias: live
-        CurrentVersion: 1
+        CurrentVersion: "1"
 Hooks:
-  BeforeAllowTraffic: ""
-  AfterAllowTraffic: ""
+  - BeforeAllowTraffic: ""
+  - AfterAllowTraffic: ""
