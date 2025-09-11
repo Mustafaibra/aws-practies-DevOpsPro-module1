@@ -3,5 +3,9 @@ Resources:
   - myLambdaFunction:
       Type: AWS::Lambda::Function
       Properties:
-        Name: my-lambda-infra-stack-MyHelloWorldFunction-ryC0JrebbF7Z  # <-- Lambda function name
-        Alias: live                   # <-- alias for traffic shifting
+        Name: my-lambda-infra-stack-MyHelloWorldFunction-ryC0JrebbF7Z
+        Alias: live
+        CurrentVersion: 1
+Hooks:
+  BeforeAllowTraffic: ""
+  AfterAllowTraffic: ""
