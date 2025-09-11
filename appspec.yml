@@ -1,3 +1,4 @@
+version: 0.0
 Resources:
   - my-lambda-infra-stack-MyHelloWorldFunction-ryC0JrebbF7Z:
       Type: AWS::Lambda::Function
